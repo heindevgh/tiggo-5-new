@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+	padding: 0;
+	padding-top: 100px;
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+.item-title {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+
+	font-weight: bold;
+	font-size: 150px;
+	line-height: 1;
+	color: #F8F8F8;
+	text-transform: uppercase;
+}
+
+.item-colors {
+	position: relative;
+	z-index: 2;
+
+	text-align: center;
+}
