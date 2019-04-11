@@ -24,5 +24,58 @@ body {
 	position: relative;
 	z-index: 2;
 
+	margin-bottom: 35px;
+
 	text-align: center;
+}
+
+.colors-selector {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.colors-item {
+	width: 38px;
+	height: 38px;
+	margin: 0 10px;
+
+	background-color: #ccc;
+	border-radius: 50%;
+
+	transition: transform 200ms ease-in-out;
+
+	cursor: pointer;
+}
+
+.colors-item:hover {
+	transform: scale(1.2);
+}
+
+.color-item_black {
+	background-color: #000;
+}
+
+.color-item_grey {
+	background-color: #808080;
+}
+
+.color-item_brown {
+	background-color: #5b4741;
+}
+
+.color-item_crimson {
+	background-color: #970028;
+}
+
+.color-item_light-blue {
+	background-color: #467be4;
+}
+
+.color-item_bronze {
+	background-color: #c14010;
+}
+
+.color-item_dark-blue {
+	background-color: #1e2952;
 }
