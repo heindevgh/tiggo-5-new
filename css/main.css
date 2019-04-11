@@ -43,13 +43,17 @@ body {
 	background-color: #ccc;
 	border-radius: 50%;
 
-	transition: transform 200ms ease-in-out;
+	transition: transform 100ms ease;
 
 	cursor: pointer;
 }
 
 .colors-item:hover {
 	transform: scale(1.2);
+}
+
+.colors-item:active {
+	transform: scale(1.1);
 }
 
 .color-item_black {
