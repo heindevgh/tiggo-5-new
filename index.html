@@ -4,24 +4,73 @@
 
 	<title>Tiggo 5 New</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-	<span class="item-title">Tiggo 5</span>
+	<div class="container">
+		<form class="b-1">
+			<h3>Комплектация</h3>
+			<div class="package">
+				<div class="package__group  package__group_1">
+					<h4>Двигатель</h4>
+					<div class="package__subgroup">
+						<input type="radio" name="engine" id="engine136" checked>
+						<label for="engine136">102/5750 (136 л.с.)</label>
+					</div>
+				</div>
+				<div class="package__group  package__group_2">
+					<h4>Трансмиссия</h4>
+					<div class="package__subgroup">
+						<input type="radio" name="transmission" id="transmissionM" value="0" checked>
+						<label for="transmissionM">Механическая</label>
+					</div>
+					<div class="package__subgroup">
+						<input type="radio" name="transmission" id="transmissionCVT" value="0">
+						<label for="transmissionCVT">Вариатор (CVT)</label>
+					</div>
+				</div>
+				<div class="package__group  package__group_3">
+					<h4>Дополнительные опции</h4>
+					<div class="package__subgroup">
+						<input type="radio" name="package" id="packageS" value="0" checked>
+						<label for="packageS">Стандарт</label>
+					</div>
+					<div class="package__subgroup">
+						<input type="radio" name="package" id="packageC" value="0">
+						<label for="packageC">Комфорт</label>
+					</div>
+				</div>
+			</div>
+		</form>
 
-	<div class="item-colors">
-		<img src="img/tiggo_black.png" alt="Автомобиль">
-	</div>
+		<div class="b-2">
+			<span class="model-name">Tiggo&nbsp;5</span>
 
-	<div class="colors-selector">
-		<div class="colors-item  color-item_black" data-path="img/tiggo_black.png"></div>
-		<div class="colors-item  color-item_grey" data-path="img/tiggo_grey.png"></div>
-		<div class="colors-item  color-item_brown" data-path="img/tiggo_brown.png"></div>
-		<div class="colors-item  color-item_crimson" data-path="img/tiggo_crimson.png"></div>
-		<div class="colors-item  color-item_light-blue" data-path="img/tiggo_light-blue.png"></div>
-		<div class="colors-item  color-item_bronze" data-path="img/tiggo_bronze.png"></div>
-		<div class="colors-item  color-item_dark-blue" data-path="img/tiggo_dark-blue.png"></div>
+			<div class="model-photo">
+				<img src="img/tiggo_black.png" alt="Автомобиль">
+			</div>
+
+			<div class="model-colors">
+				<div class="model-color  model-color_black" data-path="img/tiggo_black.png"></div>
+				<div class="model-color  model-color_grey" data-path="img/tiggo_grey.png"></div>
+				<div class="model-color  model-color_brown" data-path="img/tiggo_brown.png"></div>
+				<div class="model-color  model-color_crimson" data-path="img/tiggo_crimson.png"></div>
+				<div class="model-color  model-color_light-blue" data-path="img/tiggo_light-blue.png"></div>
+				<div class="model-color  model-color_bronze" data-path="img/tiggo_bronze.png"></div>
+				<div class="model-color  model-color_dark_blue" data-path="img/tiggo_dark-blue.png"></div>
+			</div>
+		</div>
+
+		<div class="b-3">
+			<h2>Tiggo 5 New</h2>
+			<div class="summary">
+				<div class="item-specs">102/5750 (136 л.с.), Механическая, Стандарт</div>
+				<div class="item-price">899 900 руб.</div>
+				<div class="item-price item-price_usd">$ 10 100</div>
+			</div>
+			<button class="button">Заказать</button>
+		</div>	
 	</div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

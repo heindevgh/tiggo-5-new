@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	$('.colors-selector .colors-item').on('click', function() {
-		var	itemImg = $('.item-colors img'),
+	$('.model-color').on('click', function() {
+		var	itemImg = $('.model-photo img'),
 			imgPath = $(this).attr('data-path');
 
 		itemImg.fadeOut(200, function() {

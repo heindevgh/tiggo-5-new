@@ -1,14 +1,103 @@
+/* Настройки */
+
+* {
+	box-sizing: border-box !important;
+}
+
 body {
 	margin: 0;
 	padding: 0;
-	padding-top: 100px;
 
 	font-family: 'Montserrat', sans-serif;
+	color: #151515;
 }
 
-.item-title {
+:hover, :active, :focus {
+	outline: none;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	position: relative;
+
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
+	min-height: 525px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+
+/**/
+
+
+
+/* Выбор комплектации */
+
+.b-1 {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+}
+
+.b-1 h3 {
+	margin-bottom: 35px;
+
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.package {
+	flex-grow: 1;
+	padding: 25px;
+
+	border: 5px solid #f8f8f8;
+}
+
+.package__group_1,
+.package__group_2 {
+	margin-bottom: 25px;
+}
+
+.package h4 {
+	margin-bottom: 15px;
+
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.package__subgroup {
+	margin-bottom: 10px;
+
+	font-size: 14px;
+}
+
+/**/
+
+
+
+/* Выбор цвета */
+
+.b-2 {
 	position: absolute;
 	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	padding-top: 50px;
+}
+
+.model-name {
+	position: absolute;
+	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 1;
@@ -16,26 +105,25 @@ body {
 	font-weight: bold;
 	font-size: 150px;
 	line-height: 1;
-	color: #F8F8F8;
+	color: #f8f8f8;
 	text-transform: uppercase;
 }
 
-.item-colors {
+.model-photo {
 	position: relative;
 	z-index: 2;
 
 	margin-bottom: 35px;
-
-	text-align: center;
 }
 
-.colors-selector {
+.model-colors {
 	display: flex;
 	justify-content: center;
 	align-content: center;
+	margin-bottom: 60px;
 }
 
-.colors-item {
+.model-color {
 	width: 38px;
 	height: 38px;
 	margin: 0 10px;
@@ -48,38 +136,117 @@ body {
 	cursor: pointer;
 }
 
-.colors-item:hover {
+.model-color:hover {
 	transform: scale(1.2);
 }
 
-.colors-item:active {
+.model-color:active {
 	transform: scale(1.1);
 }
 
-.color-item_black {
+.model-color_black {
 	background-color: #000;
 }
 
-.color-item_grey {
+.model-color_grey {
 	background-color: #808080;
 }
 
-.color-item_brown {
+.model-color_brown {
 	background-color: #5b4741;
 }
 
-.color-item_crimson {
+.model-color_crimson {
 	background-color: #970028;
 }
 
-.color-item_light-blue {
+.model-color_light-blue {
 	background-color: #467be4;
 }
 
-.color-item_bronze {
+.model-color_bronze {
 	background-color: #c14010;
 }
 
-.color-item_dark-blue {
+.model-color_dark-blue {
 	background-color: #1e2952;
 }
+
+/**/
+
+
+
+/* Заказ */
+
+.b-3 {
+	position: relative;
+	z-index: 3;
+
+	display: flex;
+	flex-direction: column;
+
+	width: 300px;
+}
+
+.b-3 h2 {
+	margin-bottom: 35px;
+
+	font-weight: 900;
+	font-size: 50px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.summary {
+	flex-grow: 1;
+	margin-bottom: 35px;
+	padding: 25px;
+
+	font-size: 16px;
+
+	background-color: #EAF2F9;
+}
+
+.summary div {
+	margin-bottom: 15px;
+}
+
+.summary div:last-child {
+	margin-bottom: 0;
+}
+
+.item-specs {
+	line-height: 1.5;
+}
+
+.item-price {
+	font-weight: bold;
+	font-size: 18px;
+	color: green;
+}
+
+.button {
+	width: 100%;
+	height: 46px;
+
+	font-family: inherit;
+	font-weight: bold;
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+
+	background-color: #d72b22;
+	border: none;
+
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #ab221b;
+}
+
+.button:active {
+	color: #ffffff30;
+}
+
+/**/
